@@ -7,7 +7,7 @@ services:
       - ./server:/srv/app
     ports:
       - '1337:1337'
-    env_file: .env
+    env_file: .env.local
     environment:
       DATABASE_CLIENT: ${DATABASE_CLIENT}
       DATABASE_NAME: ${DATABASE_NAME}
